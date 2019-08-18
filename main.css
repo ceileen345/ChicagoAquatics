@@ -1,0 +1,128 @@
+/* For mobile phones: */
+body {
+  background-color: #06769e;
+  color: #e6f6ff;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+
+ul a {
+  text-decoration: none;
+  color: #06769e;
+}
+
+
+ul :hover {
+  background-color: white;
+}
+
+
+.headername {
+  grid-area: header;
+  background-image:
+    url(images/watertexture.jpg);
+  text-align: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  }
+
+.headername a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 30px;
+}
+
+.navbar1 {
+  grid-area: navbar1;
+  margin-left: -8px;
+}
+
+.navbar2 {
+  grid-area: navbar2;
+  margin-right: -8px;
+  margin-left: -3px;
+}
+
+.navbar3 {
+  grid-area: navbar3;
+  margin-left: -8px;
+  margin-top: -3px;
+}
+
+.navbar4 {
+  grid-area: navbar4;
+  margin-right: -8px;
+  margin-left: -3px;
+  margin-top: -3px;
+}
+
+.textcontent {
+  grid-area: main;
+}
+
+.bottomstuff {
+  grid-area: footer;
+  text-align: center;
+  font-size: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "navbar1 navbar1 navbar2 navbar2"
+    "navbar3 navbar3 navbar4 navbar4"
+    "main main main main"
+    "footer footer footer footer"
+}
+.navbar {
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden
+}
+
+li {
+  background-color: #8fe1ff;
+  display:block;
+  text-align: center;
+  height: 30px;
+  padding-top: 10px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  body {
+    background-color: green;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "navbar1 navbar2 navbar3 navbar4"
+      "main main main main"
+      "footer footer footer footer"
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  body {
+    background-color: yellow;
+  }
+}
